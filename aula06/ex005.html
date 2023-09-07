@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, rgba(255, 166, 0, 0.800), rgba(255, 0, 0, 0.800));
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vem o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> no JavaScript.</p>
+    <div id="teste">Clique em mim</div> <br/>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.querySelector('div#teste')
+        d.style.background = 'darkgrey'
+
+        /*
+        var d = window.document.getElementById('teste')
+        d.innerText = 'Estou aguardando...'
+        window.alert(p1.innerText)
+        p1.style.color = 'grey'
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        var corpo = window.document.body
+        corpo.style.background = 'orange'*/
+
+    </script>
+</body>
+</html>

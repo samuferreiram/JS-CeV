@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var nome=window.prompt('Qual é o seu nome?')
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras..<br/>`)
+        document.write(`Seu nome em letras maiusculas fica assim: ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em letras minusculas fica assim: ${nome.toLocaleLowerCase()}`)
+
+        //Para incluir mais casas decimais, usamos 'variaval.toFixed(0 ou mais)'.// 
+        //Para transformar '.' para ',' , usamos 'variavel.toFixed(1 ou mais).replace('.', ',')//
+        //Para transformar numeros e valores de moeda (real por exemplo), usamos 'variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})'//
+    </script>
+</body>
+</html>

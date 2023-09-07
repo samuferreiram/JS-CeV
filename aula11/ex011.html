@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite o seu país: <input type="text" name="ipais" id="ipais">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var nac=window.document.querySelector('input#ipais')
+            var res=window.document.querySelector('div#res')
+            var pais=(nac.value)
+            if(pais=='Brasil'||pais=='brasil'){
+                res.innerText=`Você é brasileiro.`
+            }
+            else{
+                res.innerText=`Você é estrangeiro.`
+            }
+        }
+
+    </script>
+</body>
+</html>
